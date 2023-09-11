@@ -1,0 +1,13 @@
+{
+  "dataset_revision": "3bc5cfb4ec514264fe2db5615fac9016f7251552",
+  "mteb_dataset_name": "BornholmBitextMining",
+  "mteb_version": "1.1.0",
+  "test": {
+    "accuracy": 0.084,
+    "evaluation_time": 0.03,
+    "f1": 0.05206445380016808,
+    "main_score": 0.05206445380016808,
+    "precision": 0.04709160012317132,
+    "recall": 0.084
+  }
+}
