@@ -14,14 +14,14 @@ model_name = "thenlper/gte-base"
 # model_name = "quantumaikr/KoreanLM"
 
 model = SentenceTransformer(model_name)
-#evaluation = MTEB(tasks=["Banking77Classification"])#Classification
+evaluation = MTEB(tasks=["Banking77Classification"])#Classification
 #evaluation = MTEB(tasks=["STS16"])#STS
-#evaluation = MTEB(tasks=["StackOverflowDupQuestions"])#Reranking
+#evaluation = MTEB(tasks=["StackOverflowDupQuestions"])#Reranking 10분?
 #evaluation = MTEB(tasks=["SummEval"])#Summarization
 
 
 #evaluation = MTEB(tasks=["Tatoeba"]) # Bitext
-evaluation = MTEB(tasks=["MedrxivClusteringP2P"])#Clustering
+# evaluation = MTEB(tasks=["MedrxivClusteringP2P"])#Clustering
 # evaluation = MTEB(tasks=["PPC"])#Pair Classification
 
 #evaluation = MTEB(tasks=["SweFAQ"])#Retrival
