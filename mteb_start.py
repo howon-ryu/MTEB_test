@@ -12,6 +12,7 @@ model_name = "thenlper/gte-base"
 # model_name = "google/flan-t5-base"
 # model_name = "t5-base"
 # model_name = "quantumaikr/KoreanLM"
+# model_name = "lmsys/vicuna-13b-v1.5-16k"#테스트 해보기
 
 model = SentenceTransformer(model_name)
 evaluation = MTEB(tasks=["Banking77Classification"])#Classification
