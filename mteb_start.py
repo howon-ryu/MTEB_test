@@ -14,7 +14,7 @@ from sentence_transformers import SentenceTransformer
 # model_name = "quantumaikr/KoreanLM" # 메모리 부족 으로 인해 실패후 삭제
 #model_name = "lmsys/vicuna-13b-v1.5-16k"#메모리 부족 으로 인해 실패후 삭제
 
-model_name = "lmsys/vicuna-7b-v1.3" #분할되어 있는 모델을 불러오지 못함... from_Tf 는 현재 SentenceTransformer 에서 삭제된기능 인데 이 오류를 리턴, checkpoint 파일의 손상이라고 얘기하나. 재설치를 해봐도 여전함
+#model_name = "lmsys/vicuna-7b-v1.3" #분할되어 있는 모델을 불러오지 못함... from_Tf 는 현재 SentenceTransformer 에서 삭제된기능 인데 이 오류를 리턴, checkpoint 파일의 손상이라고 얘기하나. 재설치를 해봐도 여전함
 
 
 model = SentenceTransformer(model_name)
