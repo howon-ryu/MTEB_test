@@ -7,12 +7,15 @@ from sentence_transformers import SentenceTransformer
 # model_name = "BM-K/KoMiniLM"
 # model_name = "BM-K/KoChatBART"
 # model_name = "thenlper/gte-base"
-model_name = "intfloat/e5-small-v2"
+#model_name = "intfloat/e5-small-v2"
 # model_name = "BAAI/bge-base-en"
 # model_name = "google/flan-t5-base"
 # model_name = "t5-base"
-# model_name = "quantumaikr/KoreanLM"
-# model_name = "lmsys/vicuna-13b-v1.5-16k"#테스트 해보기
+# model_name = "quantumaikr/KoreanLM" # 메모리 부족 으로 인해 실패후 삭제
+#model_name = "lmsys/vicuna-13b-v1.5-16k"#메모리 부족 으로 인해 실패후 삭제
+
+model_name = "lmsys/vicuna-7b-v1.1"
+
 
 model = SentenceTransformer(model_name)
 evaluation = MTEB(tasks=["Banking77Classification"])#Classification
